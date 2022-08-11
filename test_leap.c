@@ -13,10 +13,10 @@ int is_leap(long year) {
   }
 
   if (year % 100 == 0) {
-    return 1;
+    return year % 400 == 0;
   }
 
-  return 0;
+  return 1;
 }
 
 int main(int argc, char **argv) {
